@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>test page</title>
+	<style>
+		body {
+			font-size: 16px;
+			word-wrap: break-word;
+			word-break: break-all;
+		}
+
+		.container {
+			text-align: center;
+			padding: 30px;
+		}
+
+		button {
+			display: block;
+			margin: 10px auto;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			background: grey;
+			color: white;
+		}
+
+		#content {
+			margin: 40px 0 0;
+			text-align: left;
+			color: #666;
+		}
+
+		#content div {
+			margin: 10px 0;
+		}
+
+		#content strong {
+			color: black;
+		}
+
+
+		.res-content {
+			padding: 0 10px 30px;
+			font-size: 14px;
+		}
+
+		.mod {
+			margin: 10px 0;
+			padding: 10px 0;
+			border-bottom: 1px solid #dedede;
+		}
+
+		.mod:last-child {
+			border-bottom: none;
+		}
+
+		.mod-item {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			margin: 5px 0;
+		}
+
+		.mod-item-title {
+			font-weight: bold;
+			width: 60px;
+		}
+
+		.mod-item-main {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			word-wrap: break-word;
+			word-break: break-all;
+			color: #666;
+		}
+
+		.mod-item-main img {
+			display: block;
+			height: 50px;
+			width: 50px;
+			margin: 10px 0;
+		}
+
+		.mod-item.error,
+		.mod-item.error .mod-item-main {
+			color: red;
+		}
+
+		.mod-item.error:active {
+			opacity: 0.7;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<button id="test1">获取配置信息</button>
+		<button id="test2">获取设备信息</button>
+		<button id="test3">新增信息</button>
+		<button id="test4">显示最终效果</button>
+		<button id="test5">获取文本信息（用于复制）</button>
+
+		<div id="content"></div>
+	</div>
+
+	<script src="dist/index.js"></script>
+	<script src="dist/test.js"></script>
+</body>
+
+</html>
